@@ -1,0 +1,96 @@
+/* Global body background */
+body {
+    background-color: rgb(107, 121, 128);
+}
+
+/* Main container styling */
+.covidData {
+    background-color: rgb(94, 204, 199);
+    width: 90%;
+    max-width: 600px;
+    margin: 15px auto;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+/* Input form styling */
+.covidData__form {
+    padding: 10px;
+    margin: 20px;
+}
+
+.covidData__input input {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+.covidData__input button {
+    width: 100%;
+    max-width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: rgb(19, 17, 17);
+    color: rgba(196, 200, 202, 0.916);
+    font-size: 1.25rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 5px rgb(119, 42, 42);
+    cursor: pointer;
+}
+
+/* Detail section styling */
+.covidData__country__info {
+    font-size: 1.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgb(59, 184, 234);
+    text-shadow: 1px 1px 1px rgb(71, 67, 67);
+    box-shadow: 5px 5px 5px rgb(71, 67, 67);
+    border-radius: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .covidData {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .covidData__input input,
+    .covidData__input button {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+
+    .covidData__country__info {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .covidData {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .covidData__input input,
+    .covidData__input button {
+        width: 100%;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .covidData__country__info {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
